@@ -14,7 +14,7 @@ API_URL = "https://metadata.luckperms.net/data/all"
 CACHE_FILE = "last_build.json"
 MAX_NOTIFS = 5  # anti-spam safety if the cache is lost
 
-HEADERS = {"User-Agent": "LuckPerms-Check-Bot/1.0 (+https://github.com/TON_PSEUDO/LuckPerms-check)"}
+HEADERS = {"User-Agent": "LuckPerms-Check-Bot/1.0 (+https://github.com/Nat688/LuckPerms-check)"}
 
 # Platforms shown in the embed (API key -> display name)
 PLATFORMS = {
