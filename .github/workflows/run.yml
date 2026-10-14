@@ -4,7 +4,7 @@ on:
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
-# Évite que deux exécutions se chevauchent et notifient en double
+# Prevents overlapping runs and duplicate notifications
 concurrency:
   group: luckperms-check
   cancel-in-progress: false
@@ -32,5 +32,5 @@ jobs:
       - name: Save cache
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Mise à jour du cache de version [skip ci]"
+          commit_message: "Update version cache [skip ci]"
           file_pattern: 'last_build.json'
